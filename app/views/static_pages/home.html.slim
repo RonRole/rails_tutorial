@@ -1,6 +1,10 @@
-h1
-  | Home
-p
-  | This is a home page for the  
-  = link_to "Ruby on Rails Tutorial", "https://railstutorial.jp/help" 
-  |  sample application
+.center.jumbotron
+  h1
+    | Welcome to the Sample App
+  h2
+    | This is the home page for the 
+    = link_to 'Ruby on Rails Tutorial','http://www.railstutorial.org/'
+    |  sample application.
+  = link_to 'Sign up now!', signup_path, class:'btn btn-lg btn-primary'
+= link_to image_tag('rails.png', alt: 'rails logo'),  'http://rubyonrails.org/'
+

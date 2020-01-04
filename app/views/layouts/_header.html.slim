@@ -1,0 +1,8 @@
+header
+    .container
+        nav.navbar.navbar-fixed-top.navbar-inverse
+            = link_to "Sample App", root_path, class: 'nav', id: "logo" 
+            ul.nav.navbar-nav.navbar-right
+                li = link_to "Home", home_path
+                li = link_to "Help", help_path
+                li = link_to "Sign up", signup_path
