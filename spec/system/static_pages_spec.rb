@@ -2,21 +2,11 @@ require 'rails_helper'
 
 
 describe '静的なページのテスト', type: :system do
-    let(:home_title) do
-        'Ruby on Rails Tutorial Sample App'
-    end
-    let(:about_title) do
-        "About | #{home_title}"
-    end
-    let(:contact_title) do
-        "Contact | #{home_title}"
-    end
-    let(:help_title) do
-        "Help | #{home_title}"
-    end
-    let(:signup_title) do
-        "Sign up | #{home_title}"
-    end
+    let(:home_title) {'Ruby on Rails Tutorial Sample App' }
+    let(:about_title) {"About | #{home_title}"}
+    let(:contact_title) {"Contact | #{home_title}"}
+    let(:help_title) {"Help | #{home_title}"}
+    let(:signup_title) {"Sign up | #{home_title}"}
 
     describe 'コンテンツ確認' do
         it 'should get home' do
